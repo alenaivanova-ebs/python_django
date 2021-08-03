@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World from Home</title>
+</head>
+<body>
+{% if username %}
+    {{ username }}
+{% else %}
+<p>world</p>
+{% endif %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" name="username" id="">
+    <input type="submit" name="Send">
+</form>
+</body>
+</html>
